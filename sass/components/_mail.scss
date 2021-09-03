@@ -1,13 +1,17 @@
+.mail {
+  display: flex;
+}
 .mail__title {
   display: block;
   font-style: normal;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: $sitebar-title-color;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 .form-footer {
-  display: inline-flex;
+  // display: inline-flex;
 }
 .form-footer__form {
   margin-right: 12px;
