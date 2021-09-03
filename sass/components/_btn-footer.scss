@@ -1,0 +1,31 @@
+.btn-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: $btn-secondary-text-color;
+
+  background: $btn-secondary-btg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.btn-footer__pic {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: $primary-background-color;
+}

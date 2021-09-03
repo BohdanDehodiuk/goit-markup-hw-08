@@ -1,0 +1,59 @@
+// utils
+@import "./utils/variables";
+@import "./utils/modern-normalize";
+@import "./utils/general_style";
+
+// Стилизация хедера
+@import "./components/header";
+@import "./components/header-conteiner";
+@import "./components/nav";
+@import "./components/logo";
+@import "./components/auth";
+
+// Стилизация герои
+@import "./components/hero";
+
+// Стилизация наши приємущества
+@import "./components/benefits";
+
+// Стилизация чем мы занимаэмся
+@import "./components/hobbi-section";
+
+// Стилизация наша команда
+@import "./components/team-section";
+@import "./components/person-block";
+@import "./components/sitebar-block";
+
+// Стилизация наши партнеры
+@import "./components/our_partners";
+
+// Стилизация футтера
+@import "./components/footer";
+@import "./components/footer-description";
+@import "./components/address";
+@import "./components/sitebar-footer";
+@import "./components/mail";
+@import "./components/btn-footer";
+
+// Стилизация бекдроп
+@import "./components/backdrop";
+
+// Стилизация модалки
+@import "./components/modal";
+
+// Стилизация формы
+@import "./components/form";
+@import "./components/field";
+@import "./components/comments";
+@import "./components/checkbox";
+@import "./components/form-btn";
+
+// Стилизация секции фортфолио
+@import "./components/portfolio-section";
+
+// Стилизация кнопок-фильтров портфолио
+@import "./components/filter";
+
+// Стилизация галереи-портфолио
+@import "./components/gallery";
+@import "./components/gallery-description";

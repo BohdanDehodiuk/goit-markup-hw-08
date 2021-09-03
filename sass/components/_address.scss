@@ -1,0 +1,35 @@
+.address {
+}
+.address__text {
+  color: $address-text-color;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  margin-bottom: 9px;
+}
+.address__list {
+  display: block;
+}
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.address__link {
+  color: $address-link-color;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+  }
+}

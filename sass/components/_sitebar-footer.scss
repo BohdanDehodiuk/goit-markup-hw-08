@@ -1,0 +1,49 @@
+.sitebar-footer {
+  margin-right: auto;
+}
+.sitebar-footer__title {
+  display: block;
+  font-style: normal;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $sitebar-title-color;
+  margin-bottom: 20px;
+}
+.sitebar-footer__list {
+  display: flex;
+  align-items: baseline;
+}
+.sitebar-footer__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.sitebar-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-link-sitebar-color;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-link-color;
+  }
+}
+
+.sitebar-footer__pic {
+  width: 20px;
+  height: 20px;
+  fill: $btn-primari-btg-color;
+}

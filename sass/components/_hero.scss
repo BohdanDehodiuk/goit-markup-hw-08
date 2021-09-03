@@ -1,0 +1,55 @@
+.hero {
+  background-color: $hero-background-color;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgimag.jpg);
+}
+.hero__title {
+  color: $hero-title-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.hero__btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Roboto;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 10px 32px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+
+  background-color: $btn-secondary-btg-color;
+  color: $btn-secondary-text-color;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(255, 255, 255, 0.5),
+      0px 1px 2px rgba(255, 255, 255, 0.5), 0px 2px 2px rgba(255, 255, 255, 0.5);
+  }
+}

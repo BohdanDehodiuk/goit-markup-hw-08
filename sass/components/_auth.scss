@@ -1,0 +1,44 @@
+.auth {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.auth__list {
+  display: flex;
+  margin-left: auto;
+}
+.auth__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.auth__link {
+  display: flex;
+  color: $auth-link-color;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+    fill: $accent-link-color;
+  }
+}
+.auth__ikon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}

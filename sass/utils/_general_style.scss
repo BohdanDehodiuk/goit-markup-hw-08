@@ -1,0 +1,37 @@
+/* Стилизация Боди */
+body {
+  background-color: var(--primary-background-color);
+  fill: var(--main-partners-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+/* Убираэт точки у всех списков */
+ul {
+  list-style: none;
+}
+/* Сбросываем марджены  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Геометрия всех контейнеров */
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+}
