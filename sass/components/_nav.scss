@@ -1,14 +1,21 @@
 .nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
   // display: flex;
   // align-items: center;
 }
 .nav__list {
   // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .nav__item {
-  // margin-right: 50px;
+  margin-right: 50px;
   &:last-child {
-    // margin-right: 0px;
+    margin-right: 0px;
   }
 }
 

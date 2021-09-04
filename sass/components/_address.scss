@@ -1,18 +1,32 @@
+.address {
+}
 .address__text {
   color: $address-text-color;
   font-style: normal;
   font-weight: normal;
   line-height: 1.7;
-  // margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .address__list {
   display: block;
 }
 .address__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   &:last-child {
-    // margin-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 .address__link {

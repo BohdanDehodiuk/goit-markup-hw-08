@@ -1,5 +1,7 @@
 .footer-description {
-  // margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer-description__logo {
   display: block;
@@ -9,7 +11,7 @@
   font-style: normal;
   font-size: 26px;
   line-height: 1.2;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-description__studio {
   color: $logo-studio-footer;
