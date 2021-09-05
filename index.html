@@ -22,16 +22,12 @@
                 <span class="logo__text">Studio
                 </span>
             </a>
-
-            <button type="button" class="button__mobile " data-menu-button aria-expanded="false" aria-control="page-header__menu">
+            <button class="button-mobile js-open-menu" type="button" data-menu-button aria-expanded="false" aria-control="page-header__menu">
                 <svg width="40px" height="40px" aria-label="переключательмобильного меню">
-                    <use class="button__mobile-menu" xlink:href="./images/symbol-defs.svg#mob-menu-btn"></use>
-                    <use class="button__mobile-cross" xlink:href="./images/svg/symbol-defs.svg#close-btn"></use>
+                    <use class="button-mobile__menu" xlink:href="./images/symbol-defs.svg#mob-menu-btn"></use>
                 </svg>
-
             </button>
-            <div class="mobile-menu" id="page-header__menu" data-menu>
-                <nav class="nav">
+            <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a class="nav__link nav__link--current" href="./index.html">Студия</a>
@@ -43,32 +39,32 @@
                             <a class="nav__link" href="">Контакты</a>
                         </li>
                     </ul>
-                </nav>
-
-                <ul class="auth__list">
-                    <li class="auth__item">
-                        <a class="auth__link" href="mailto:info@devstudio.com">
-                            <svg class="auth__ikon">
-                                <use href="./images/symbol-defs.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="auth__item">
-                        <a class="auth__link" href="tel:+380961111111">
-                            <svg class="auth__ikon">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                            +380961111111</a>
-                    </li>
-                </ul>
-            </div>
+            </nav>
+            <ul class="auth__list">
+                <li class="auth__item">
+                    <a class="auth__link" href="mailto:info@devstudio.com">
+                        <svg class="auth__ikon">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="auth__item">
+                    <a class="auth__link" href="tel:+380961111111">
+                        <svg class="auth__ikon">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +380961111111
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <!-- Главный контент -->
     <main class="main-index">
-        <!-- Герои -->
 
+        <!-- Герои -->
         <section class="hero">
             <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
@@ -89,7 +85,8 @@
                         </div>
                         <h3 class="benefits__secondary-title">Внимание к деталям</h3>
                         <p class="benefits__text">Идейные соображения, а также начало повседневной работы по формированию
-                            позиции.</p>
+                            позиции.
+                        </p>
                     </li>
                     <li class="benefits__item">
                         <div class="benefits__ikon">
@@ -100,7 +97,8 @@
                         <h3 class="benefits__secondary-title">Пунктуальность</h3>
                         <p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет
-                            за собой.</p>
+                            за собой.
+                        </p>
                     </li>
                     <li class="benefits__item">
                         <div class="benefits__ikon">
@@ -110,7 +108,8 @@
                         </div>
                         <h3 class="benefits__secondary-title">Планирование</h3>
                         <p class="benefits__text">Равным образом консультация с широким активом в значительной степени
-                            обуславливает.</p>
+                            обуславливает.
+                        </p>
                     </li>
                     <li class="benefits__item">
                         <div class="benefits__ikon">
@@ -120,7 +119,8 @@
                         </div>
                         <h3 class="benefits__secondary-title">Современные технологии</h3>
                         <p class="benefits__text">Значимость этих проблем настолько очевидна, что реализация плановых
-                            заданий.</p>
+                            заданий.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -483,9 +483,67 @@
         </div>    
     </div>
 
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="page-header__menu" data-menu>
+        <button class="button-mobile-close js-close-menu">
+            <svg width="40px" height="40px" aria-label="переключательмобильного меню">
+                <use class="button-mobile__cross" href="./images/symbol-defs.svg#close-btn"></use>
+            </svg>
+        </button>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <ul class="contacts-list">
+            <li class="contacts-list__item">
+                <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-list__ikon">
+                        <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a>
+            </li>
+            <li class="contacts-list__item">
+                <a class="contacts-list__link" href="tel:+380961111111">
+                    <svg class="contacts-list__ikon">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    +380961111111</a>
+            </li>
+        </ul>
+
+        <ul class="additional-social">
+            <li class="additional-social__item">
+                <a class="additional-social__link" href="#"><span class="additional-social__text">Instagram</span></a>
+            </li>
+            <li class="additional-social__item">
+                <a class="additional-social__link " href="#"><span class="additional-social__text">Twitter</span></a>
+            </li>
+            <li class="additional-social__item">
+                <a class=" additional-social__link " href="#"><span class="additional-social__text">Facebook</span></a>
+            </li>
+            <li class="additional-social__item">
+                <a class="additional-social__link " href="#"><span class="additional-social__text">LinkedIn</span></a>
+            </li>
+        </ul>
+    </div>
+
     <!-- Скрипт модального окна -->
     <script src="./js/modal.js"></script>
     <!-- Скрипт мобильного меню -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 .sitebar-footer {
   margin-right: auto;
 }
+
 .sitebar-footer__title {
   display: block;
   font-style: normal;
@@ -9,12 +10,13 @@
   color: $sitebar-title-color;
   margin-bottom: 20px;
 }
+
 .sitebar-footer__list {
   display: flex;
-  // align-items: baseline;
   justify-content: center;
   margin-bottom: 60px;
 }
+
 .sitebar-footer__item {
   margin-right: 10px;
 
