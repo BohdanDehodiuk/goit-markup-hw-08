@@ -1,6 +1,7 @@
 .form {
   padding: 40px;
 }
+
 .form__text {
   margin-bottom: 12px;
   font-style: normal;
@@ -9,4 +10,8 @@
   text-align: 1.15;
 
   color: $primary-text-color;
+
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }

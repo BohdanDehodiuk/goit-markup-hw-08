@@ -7,6 +7,7 @@
     padding-bottom: 94px;
   }
 }
+
 .benefits__title {
   position: absolute;
   width: 1px;
@@ -19,6 +20,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .benefits__list {
   @media screen and (min-width: 768px) {
     margin: -15px;
@@ -73,10 +75,12 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
 .benefits__img {
   width: 70px;
   height: 70px;
 }
+
 .benefits__secondary-title {
   color: $primary-text-color;
   line-height: 1.14;
@@ -87,8 +91,8 @@
     text-align: center;
   }
 }
+
 .benefits__text {
-  // width: 270px;
   color: $secondary-text-color;
   font-style: normal;
   font-weight: normal;

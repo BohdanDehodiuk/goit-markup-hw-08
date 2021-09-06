@@ -7,6 +7,7 @@
     margin-left: auto;
   }
 }
+
 .mail__title {
   display: block;
   font-style: normal;
@@ -15,12 +16,13 @@
   color: $sitebar-title-color;
   margin-bottom: 20px;
 }
+
 .form-footer {
   @media screen and (min-width: 1200px) {
     display: inline-flex;
-    // margin-left: 93px;
   }
 }
+
 .form-footer__form {
   margin-bottom: 20px;
 
@@ -29,6 +31,7 @@
     margin-bottom: 0px;
   }
 }
+
 .form-footer__input {
   width: 358px;
   height: 50px;
