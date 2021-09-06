@@ -1,5 +1,5 @@
 .sitebar-footer {
-  margin-right: auto;
+  // margin-right: auto;
 }
 
 .sitebar-footer__title {
@@ -14,7 +14,10 @@
 .sitebar-footer__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .sitebar-footer__item {
