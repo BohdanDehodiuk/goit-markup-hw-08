@@ -1,4 +1,8 @@
 .gallery-description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;

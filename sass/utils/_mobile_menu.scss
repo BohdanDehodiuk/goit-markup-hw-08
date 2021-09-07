@@ -1,5 +1,7 @@
 .mobile-menu {
   @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,6 +30,7 @@
   @media (max-width: 767px) {
     display: inline-flex;
     padding: 0;
+    width: 24px;
     border: none;
     background-color: #fff;
   }
@@ -55,6 +58,10 @@
 }
 
 .navigation {
+  @media (max-width: 767px) {
+    margin-bottom: auto;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
@@ -62,7 +69,7 @@
 }
 
 .navigation__list {
-  margin-bottom: 300px;
+  // margin-bottom: 300px;
 }
 
 .navigation__item {
