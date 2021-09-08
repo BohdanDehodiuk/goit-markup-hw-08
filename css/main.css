@@ -1652,6 +1652,7 @@ ul {
 .modal {
   position: absolute;
   max-width: 528px;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1666,20 +1667,6 @@ ul {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (max-width: 767px) {
-  .modal {
-    max-width: 450px;
-    top: 55%;
-  }
-}
-
-@media (min-width: 768px) {
-  .modal {
-    min-width: 528px;
-    top: 50%;
-  }
 }
 
 .modal--is-hidden {
@@ -1727,19 +1714,26 @@ ul {
   padding: 40px;
 }
 
+@media screen and (min-width: 480px) {
+  .form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 528px;
+  }
+}
+
 .form__text {
   margin-bottom: 12px;
   font-style: normal;
   font-size: 20px;
   line-height: 23px;
   text-align: 1.15;
+  text-align: center;
   color: #212121;
-}
-
-@media screen and (max-width: 767px) {
-  .form__text {
-    text-align: center;
-  }
 }
 
 .field {
@@ -1851,7 +1845,7 @@ ul {
   color: #757575;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .checkbox__lable {
     font-size: 14px;
   }
@@ -1899,7 +1893,7 @@ ul {
   color: #2196f3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .checkbox__link {
     font-size: 14px;
   }
@@ -1908,7 +1902,6 @@ ul {
 .form-btn {
   width: 200px;
   height: 50px;
-  margin-left: 25%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1927,6 +1920,12 @@ ul {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 480px) {
+  .form-btn {
+    margin-left: 25%;
+  }
 }
 
 .form-btn:hover, .form-btn:focus {
