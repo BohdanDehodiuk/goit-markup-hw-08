@@ -769,6 +769,12 @@ ul {
   background-size: cover;
 }
 
+@media (max-width: 1199px) {
+  .hero {
+    height: 400px;
+  }
+}
+
 @media (min-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-images/hero768-min.jpg);
@@ -776,7 +782,13 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (max-width: 1199px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-images/hero1200-min.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero1200-min.jpg);
@@ -1288,6 +1300,7 @@ ul {
   .partners__item {
     width: calc((100% - 30px * 2) / 2);
     margin: 15px;
+    width: auto;
   }
 }
 
@@ -1295,6 +1308,7 @@ ul {
   .partners__item {
     width: calc((100% - 30px * 3) / 3);
     margin: 15px;
+    width: auto;
   }
 }
 
@@ -1570,8 +1584,6 @@ ul {
 .form-footer__input {
   width: 358px;
   height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -2119,7 +2131,6 @@ ul {
 .gallery__text {
   position: absolute;
   text-align: left;
-  padding: 63px 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2136,11 +2147,29 @@ ul {
   opacity: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .gallery__text {
+    padding: 23px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__text {
+    padding: 75px 24px;
+  }
+}
+
 .gallery__link:hover .gallery__text,
 .gallery__link:focus .gallery__text {
   opacity: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__text {
+    padding: 40px 24px;
+  }
 }
 
 .gallery__pic {

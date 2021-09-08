@@ -79,9 +79,15 @@
 }
 
 .gallery__text {
+  @media screen and (max-width: 1199px) {
+    padding: 23px 24px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 75px 24px;
+  }
+
   position: absolute;
   text-align: left;
-  padding: 63px 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -98,6 +104,10 @@
   .gallery__link:focus & {
     opacity: 1;
     transform: translateY(-100%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px 24px;
   }
 }
 
