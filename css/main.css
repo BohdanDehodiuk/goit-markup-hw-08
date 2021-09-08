@@ -361,6 +361,13 @@ ul {
   }
 }
 
+@media (max-width: 450px) {
+  .mobile-menu {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
